@@ -1,6 +1,6 @@
 use ast::{Block, Expr, Stmt};
 use error::ParserError;
-use tokens::Token;
+use lexer::{Lexer, Token};
 use warning::ParserWarning;
 
 use crate::sources::{
@@ -10,8 +10,8 @@ use crate::sources::{
 
 pub mod ast;
 pub mod error;
+pub mod lexer;
 pub mod operators;
-pub mod tokens;
 pub mod warning;
 
 pub struct Parser<'a> {

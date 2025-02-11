@@ -1,6 +1,6 @@
 use crate::{error::make_error, sources::span::CodeArea};
 
-use super::tokens::Token;
+use super::lexer::Token;
 
 make_error! {
     @kind: Error;
