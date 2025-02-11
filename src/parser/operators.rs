@@ -10,7 +10,7 @@ macro_rules! operators {
         )+
     ) => {
 
-        use crate::parser::lexer::Token;
+        use crate::parser::tokens::Token;
 
         #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
         pub enum Operator {
